@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backg"
     android:padding="16dp"
-    tools:context=".Restar">
+    tools:context=".ui.matematicas.Resta">
 
     <LinearLayout
         android:layout_width="match_parent"

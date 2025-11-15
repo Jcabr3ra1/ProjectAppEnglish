@@ -1,356 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backg"
     android:padding="16dp"
-    tools:context=".ui.ingles.Frutas">
+    tools:context=".ui.ingles.Colores">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <!-- TÍTULO -->
         <TextView
-            android:id="@+id/tvTitleFrutas"
+            android:id="@+id/tvTitleAnimales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/title_fruits"
-            android:textColor="@color/sky_blue"
+            android:text="@string/title_colors"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/sky_blue"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="24dp"/>
 
         <!-- GRILLA -->
         <GridLayout
-            android:id="@+id/gridFrutas"
+            android:id="@+id/gridColores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alignmentMode="alignMargins"
             android:columnCount="2"
+            android:alignmentMode="alignMargins"
             android:useDefaultMargins="true">
 
-            <!-- Apple -->
+            <!-- Rojo -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
-                    android:id="@+id/imgApple"
+                    android:id="@+id/imgRojo"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/img_apple"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/apple" />
+                    android:src="@drawable/red"
+                    android:contentDescription="@string/img_red"/>
 
                 <!-- audios -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="6dp">
 
                     <ImageButton
-                        android:id="@+id/btnEsApple"
+                        android:id="@+id/btnEsRojo"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_es"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp"
                         android:contentDescription="@string/audio_es"
-                        android:onClick="soundAppleEs"
-                        android:padding="2dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_es" />
+                        android:onClick="soundRedEs" />
 
                     <ImageButton
-                        android:id="@+id/btnEnApple"
+                        android:id="@+id/btnEnRojo"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:layout_marginStart="8dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
-                        android:contentDescription="@string/audio_en"
-                        android:onClick="soundAppleEn"
-                        android:padding="2dp"
+                        android:src="@drawable/ic_en"
+                        android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_en" />
+                        android:padding="2dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundRedEn" />
 
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Banana -->
+            <!-- Azul -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
-                    android:id="@+id/imgBanana"
+                    android:id="@+id/imgAzul"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/img_banana"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/banana" />
+                    android:src="@drawable/blue"
+                    android:contentDescription="@string/img_blue"/>
 
-                <!-- audios -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="6dp">
 
+                    <!-- audios -->
                     <ImageButton
-                        android:id="@+id/btnEsBanana"
+                        android:id="@+id/btnEsAzul"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_es"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp"
                         android:contentDescription="@string/audio_es"
-                        android:onClick="soundBananaEs"
-                        android:padding="2dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_es" />
+                        android:onClick="soundBlueEs" />
 
                     <ImageButton
-                        android:id="@+id/btnEnBanana"
+                        android:id="@+id/btnEnAzul"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:layout_marginStart="8dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
-                        android:contentDescription="@string/audio_en"
-                        android:onClick="soundBananaEn"
-                        android:padding="2dp"
+                        android:src="@drawable/ic_en"
+                        android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_en" />
+                        android:padding="2dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundBlueEn" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Grape -->
+            <!-- yellow-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
-                    android:id="@+id/imgGrape"
+                    android:id="@+id/imgYellow"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/img_grape"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/grape" />
+                    android:src="@drawable/yellow"
+                    android:contentDescription="@string/img_yellow"/>
 
                 <!-- audios -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="6dp">
 
                     <ImageButton
-                        android:id="@+id/btnEsGrape"
+                        android:id="@+id/btnEsYellow"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_es"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp"
                         android:contentDescription="@string/audio_es"
-                        android:onClick="soundGripeEs"
-                        android:padding="2dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_es" />
+                        android:onClick="soundYellowEs" />
 
                     <ImageButton
-                        android:id="@+id/btnEnGrape"
+                        android:id="@+id/btnEnYellow"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:layout_marginStart="8dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
-                        android:contentDescription="@string/audio_en"
-                        android:onClick="soundGripeEn"
-                        android:padding="2dp"
+                        android:src="@drawable/ic_en"
+                        android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_en" />
+                        android:padding="2dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundYellowEn" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Mango -->
+            <!-- Green -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
-                    android:id="@+id/imgMango"
+                    android:id="@+id/imgGreen"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/img_mango"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mango" />
+                    android:src="@drawable/green"
+                    android:contentDescription="@string/img_green"/>
 
                 <!-- audios -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="6dp">
 
                     <ImageButton
-                        android:id="@+id/btnEsMango"
+                        android:id="@+id/btnEsGreen"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_es"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp"
                         android:contentDescription="@string/audio_es"
-                        android:onClick="soundMangoEs"
-                        android:padding="2dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_es" />
+                        android:onClick="soundGreenEs" />
 
                     <ImageButton
-                        android:id="@+id/btnEnMango"
+                        android:id="@+id/btnEnGreen"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:layout_marginStart="8dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
-                        android:contentDescription="@string/audio_en"
-                        android:onClick="soundMangoEn"
-                        android:padding="2dp"
+                        android:src="@drawable/ic_en"
+                        android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_en" />
+                        android:padding="2dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundGreenEn" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Orange -->
+            <!-- Black -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
-                    android:id="@+id/imgOrange"
+                    android:id="@+id/imgBlack"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/img_orange"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/orange_fruit" />
+                    android:src="@drawable/black"
+                    android:contentDescription="@string/img_black"/>
 
                 <!-- audios -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="6dp">
 
                     <ImageButton
-                        android:id="@+id/btnEsOrange"
+                        android:id="@+id/btnEsBlack"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_es"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp"
                         android:contentDescription="@string/audio_es"
-                        android:onClick="soundOrangeEs"
-                        android:padding="2dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_es" />
+                        android:onClick="soundBlackEs" />
 
                     <ImageButton
-                        android:id="@+id/btnEnOrange"
+                        android:id="@+id/btnEnBlack"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:layout_marginStart="8dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
-                        android:contentDescription="@string/audio_en"
-                        android:onClick="soundOrangeEn"
-                        android:padding="2dp"
+                        android:src="@drawable/ic_en"
+                        android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_en" />
+                        android:padding="2dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundBlackEn" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Watermelon -->
+            <!-- Purple -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="8dp"
+                android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_margin="8dp">
 
                 <ImageView
-                    android:id="@+id/imgWatermelon"
+                    android:id="@+id/imgPurple"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/img_watermelon"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/watermelon" />
+                    android:src="@drawable/purple"
+                    android:contentDescription="@string/img_purple"/>
 
                 <!-- audios -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="6dp">
 
                     <ImageButton
-                        android:id="@+id/btnEsWatermelon"
+                        android:id="@+id/btnEsPurple"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_es"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp"
                         android:contentDescription="@string/audio_es"
-                        android:onClick="soundWatermelonEs"
-                        android:padding="2dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_es" />
+                        android:onClick="soundPurpleEs" />
 
                     <ImageButton
-                        android:id="@+id/btnEnWatermelon"
+                        android:id="@+id/btnEnPurple"
                         android:layout_width="55dp"
                         android:layout_height="35dp"
-                        android:layout_marginStart="8dp"
-                        android:adjustViewBounds="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
-                        android:contentDescription="@string/audio_en"
-                        android:onClick="soundWatermelonEn"
-                        android:padding="2dp"
+                        android:src="@drawable/ic_en"
+                        android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_en" />
+                        android:padding="2dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundPurpleEn" />
                 </LinearLayout>
             </LinearLayout>
         </GridLayout>

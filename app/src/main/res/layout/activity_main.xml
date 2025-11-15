@@ -5,23 +5,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backg"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    android:gravity="center_horizontal"
+    tools:context=".ui.MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <!-- Imagen central -->
     <ImageView
         android:id="@+id/ivHero"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/content_logo"
-        android:onClick="irMenu_main"
         android:scaleType="fitCenter"
         android:src="@drawable/logo" />
 
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_app_de_ingl_s"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aprende_y_divi_rtete_jugando"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnEmpezarAhora"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/empezar_ahora"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6C63FF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btnYaTengoCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/ya_tengo_una_cuenta"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#33000000" />
+    </LinearLayout>
 
 </LinearLayout>

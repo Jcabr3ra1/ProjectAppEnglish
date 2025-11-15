@@ -60,7 +60,7 @@
     <string name="button_matematicas">Matematicas</string>
     <string name="button_jugar">Jugar</string>
     <string name="button_imc">IMC</string>
-    <string name="button_area">Area</string>
+    <string name="button_figura">Figuras</string>
 
     <!-- Títulos de secciones -->
     <string name="title_colors">Colores</string>
@@ -176,6 +176,10 @@
     <string name="test4">Test4</string>
     <string name="alertOk">Alert Ok</string>
     <string name="snack1">SnackTest</string>
+    <string name="mi_app_de_ingl_s">Mi App de Inglés</string>
+    <string name="aprende_y_divi_rtete_jugando">Aprende y diviértete jugando.</string>
+    <string name="empezar_ahora">EMPEZAR AHORA</string>
+    <string name="ya_tengo_una_cuenta">YA TENGO UNA CUENTA</string>
 
     <!-- Item -->
     <string-array name="Ciudades">

@@ -12,79 +12,70 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiAppingles">
         <activity
-            android:name=".Test"
+            android:name=".ui.pruebas.Test"
             android:exported="false" />
         <activity
-            android:name=".Juego_Colores"
+            android:name=".ui.juego.Juego_Colores"
             android:exported="false" />
         <activity
-            android:name=".Menu_Juego"
+            android:name=".ui.menus.Menu_Juego"
             android:exported="false" />
         <activity
-            android:name=".Datos"
+            android:name=".ui.pruebas.Datos"
             android:exported="false" />
         <activity
-            android:name=".Bienvenido"
+            android:name=".ui.matematicas.Imc"
             android:exported="false" />
         <activity
-            android:name=".Imc"
+            android:name=".ui.figuras.Circulo"
             android:exported="false" />
         <activity
-            android:name=".Circulo"
+            android:name=".ui.figuras.Cuadrado"
             android:exported="false" />
         <activity
-            android:name=".Cuadrado"
+            android:name=".ui.figuras.Triangulo"
             android:exported="false" />
         <activity
-            android:name=".Triangulo"
+            android:name=".ui.menus.Menu_Figuras"
             android:exported="false" />
         <activity
-            android:name=".Menu_Area"
+            android:name=".ui.menus.Menu_Operaciones"
             android:exported="false" />
         <activity
-            android:name=".Menu_Operaciones"
+            android:name=".ui.matematicas.Dividir"
             android:exported="false" />
         <activity
-            android:name=".Operaciones"
+            android:name=".ui.matematicas.Multiplicar"
             android:exported="false" />
         <activity
-            android:name=".Main_Menu"
+            android:name=".ui.matematicas.Resta"
             android:exported="false" />
         <activity
-            android:name=".Dividir"
+            android:name=".ui.matematicas.Suma"
             android:exported="false" />
         <activity
-            android:name=".Multiplicar"
+            android:name=".ui.menus.Menu_Main"
             android:exported="false" />
         <activity
-            android:name=".Restar"
+            android:name=".ui.ingles.Numeros"
             android:exported="false" />
         <activity
-            android:name=".Sumar"
+            android:name=".ui.ingles.Animales"
             android:exported="false" />
         <activity
-            android:name=".Menu_Main"
+            android:name=".ui.ingles.Vocales"
             android:exported="false" />
         <activity
-            android:name=".Numeros"
+            android:name=".ui.ingles.Frutas"
             android:exported="false" />
         <activity
-            android:name=".Animales"
+            android:name=".ui.ingles.Colores"
             android:exported="false" />
         <activity
-            android:name=".Vocales"
+            android:name=".ui.menus.Menu_Ingles"
             android:exported="false" />
         <activity
-            android:name=".Frutas"
-            android:exported="false" />
-        <activity
-            android:name=".Colors"
-            android:exported="false" />
-        <activity
-            android:name=".Menu_Ingles"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

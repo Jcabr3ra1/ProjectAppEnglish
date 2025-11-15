@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@drawable/backg"
-    tools:context=".Menu_Juego">
+    tools:context=".ui.menus.Menu_Juego">
 
     <LinearLayout
         android:id="@+id/main"
