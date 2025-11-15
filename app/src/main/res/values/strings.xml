@@ -1,0 +1,189 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">MiAppInglés</string>
+
+    <!-- Pantalla de bienvenida -->
+    <string name="welcome_title">Bienvenido a mi app</string>
+    <string name="button_next">Siguiente</string>
+    <string name="button_back">Atrás</string>
+    <string name="tittle_menu">Menu</string>
+
+    <!-- Menú ingles -->
+    <string name="menu_title">Ingles</string>
+    <string name="menu_colors">Colores</string>
+    <string name="menu_areas">Areas</string>
+    <string name="menu_fruits">Frutas</string>
+    <string name="menu_animals">Animales</string>
+    <string name="menu_numbers">Números</string>
+    <string name="menu_vowels">Vocales</string>
+
+    <!-- Operaciones -->
+    <string name="menu_title_suma">Suma</string>
+    <string name="menu_title_resta">Resta</string>
+    <string name="menu_title_multiplicacion">Multiplicaicon</string>
+    <string name="menu_title_division">Division</string>
+    <string name="Num1">Ingrese numero 1</string>
+    <string name="Num2">Ingrese numero 2</string>
+    <string name="resultado_suma">Calcular Suma</string>
+    <string name="resultado_resta">Calcular Resta</string>
+    <string name="resultado_multiplacion">Calcular Multiplicaicon</string>
+    <string name="resultado_division">Calcular Division</string>
+    <string name="resultado_es">El resultado es: </string>
+
+    <!-- Area triangulo -->
+    <string name="menu_title_triangulo">Área del Triángulo</string>
+    <string name="base">Ingrese la base</string>
+    <string name="altura">Ingrese la altura</string>
+    <string name="btn_calcular_area">Calcular área</string>
+    <string name="resultado_area">El área del triángulo es:</string>
+
+    <string name="menu_title_circulo">Área del Círculo</string>
+    <string name="radio">Ingrese el radio</string>
+    <string name="menu_title_cuadrado">Área del Cuadrado</string>
+    <string name="lado">Ingrese el lado</string>
+
+    <!-- Menu areas -->
+    <string name="menu_title_area">Area</string>
+    <string name="menu_triangulo">Triangulo</string>
+    <string name="menu_cuadrado">Cuadrado</string>
+    <string name="menu_circulo">Circulo</string>
+
+    <!-- Menú operaciones -->
+    <string name="menu_title_operaciones">Operaciones</string>
+    <string name="menu_sumar">Suma</string>
+    <string name="menu_restar">Resta</string>
+    <string name="menu_multiplicacion">Multiplicaicon</string>
+    <string name="menu_division">Division</string>
+
+    <!-- Menú principal -->
+    <string name="button_ingles">Ingles</string>
+    <string name="button_matematicas">Matematicas</string>
+    <string name="button_jugar">Jugar</string>
+    <string name="button_imc">IMC</string>
+    <string name="button_area">Area</string>
+
+    <!-- Títulos de secciones -->
+    <string name="title_colors">Colores</string>
+    <string name="title_fruits">Frutas</string>
+    <string name="title_animals">Animales</string>
+    <string name="title_numbers">Números</string>
+    <string name="title_vowels">Vocales</string>
+
+    <!-- Descripcion imagenes aniamles -->
+    <string name="img_cow">Cow</string>
+    <string name="img_dog">Dog</string>
+    <string name="img_Cat">Cat</string>
+    <string name="img_bird">Bird</string>
+    <string name="img_tiger">Tiger</string>
+    <string name="img_rabbit">Rabbit</string>
+
+    <!-- Descripcion imagenes colores -->
+    <string name="img_red">Red</string>
+    <string name="img_yellow">Yellow</string>
+    <string name="img_blue">Blue</string>
+    <string name="img_black">Black</string>
+    <string name="img_purple">Purple</string>
+    <string name="img_green">Green</string>
+
+    <!-- Descripcion imagenes frutas -->
+    <string name="img_apple">Apple</string>
+    <string name="img_orange">Orange</string>
+    <string name="img_grape">Grape</string>
+    <string name="img_banana">Banana</string>
+    <string name="img_mango">Mango</string>
+    <string name="img_watermelon">Watermelon</string>
+
+    <!-- Descripcion imagenes vocales -->
+    <string name="img_a">A</string>
+    <string name="img_e">E</string>
+    <string name="img_i">I</string>
+    <string name="img_o">O</string>
+    <string name="img_u">U</string>
+
+    <!-- Descripcion imagenes numeros -->
+    <string name="num_1">One - Uno</string>
+    <string name="num_2">Two - Dos</string>
+    <string name="num_3">Three - Tres</string>
+    <string name="num_4">Four - Cuatro</string>
+    <string name="num_5">Five - Cinco</string>
+    <string name="num_6">Six - Seis</string>
+    <string name="num_7">Seven - Siete</string>
+    <string name="num_8">Eight - Ocho</string>
+    <string name="num_9">Nine - Nueve</string>
+    <string name="num_10">Ten - Diez</string>
+
+    <!-- audios -->
+    <string name="audio_es">Reproducir audio en español</string>
+    <string name="audio_en">Reproducir audio en ingles</string>
+
+    <!-- Accesibilidad / contenidos -->
+    <string name="content_logo">Logotipo de la app</string>
+    <string name="content_menu_illustration">Ilustración del menú principal</string>
+    <string name="content_button_start">Botón para empezar</string>
+
+    <!-- Mensajes comunes -->
+    <string name="msg_loading">Cargando…</string>
+    <string name="msg_coming_soon">Pronto disponible</string>
+    <string name="msg_try_again">Intenta de nuevo</string>
+    <string name="ingresa_datos">Ingresa Datos</string>
+    <string name="ingresa_tu_nombre">Ingresa tu nombre</string>
+    <string name="ingresa_apellido">Ingresa tu apellido</string>
+    <string name="ingresa_tu_edad">Ingresa Tu edad</string>
+    <string name="genero">Genero</string>
+    <string name="f">F</string>
+    <string name="m">M</string>
+    <string name="gustos">Gustos</string>
+    <string name="jugar">Jugar</string>
+    <string name="caminar">Caminar</string>
+    <string name="leer">Leer</string>
+    <string name="guardar">Guardar</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="rea_del_c_rculo">Área del Círculo</string>
+    <string name="ingrese_el_radio">Ingrese el radio</string>
+    <string name="calcular_rea">Calcular área</string>
+    <string name="el_rea_del_c_rculo_es">El área del círculo es:</string>
+    <string name="rea_del_cuadrado">Área del Cuadrado</string>
+    <string name="ingrese_el_lado">Ingrese el lado</string>
+    <string name="el_rea_del_cuadrado_es">El área del cuadrado es:</string>
+    <string name="calculadora_imc">Calculadora IMC</string>
+    <string name="ingrese_su_peso_kg">Ingrese su peso (kg)</string>
+    <string name="ingrese_su_altura_m">Ingrese su altura (m)</string>
+    <string name="calcular_imc">Calcular IMC</string>
+    <string name="tu_imc_es">Tu IMC es</string>
+    <string name="rea_del_tri_ngulo">Área del Triángulo</string>
+    <string name="ingrese_la_base">Ingrese la base</string>
+    <string name="ingrese_la_altura">Ingrese la altura</string>
+    <string name="el_rea_del_tri_ngulo_es">El área del triángulo es:</string>
+    <string name="juegos">Juegos</string>
+    <string name="aprendamos_los_colores">¡Aprendamos los Colores!</string>
+    <string name="color_actual">Color actual</string>
+    <string name="selecciona_c_mo_se_escribe_este_color">Selecciona cómo se escribe este color:</string>
+    <string name="red">Red</string>
+    <string name="rad">Rad</string>
+    <string name="reed">Reed</string>
+    <string name="pronunciaci_n_red">Pronunciación: /red/</string>
+    <string name="siguiente_color">Siguiente color ➜</string>
+    <string name="volver_al_men">⟵ Volver al Menú</string>
+
+    <!--test -->
+    <string name="test">Test</string>
+    <string name="test1">crearAletDialog</string>
+    <string name="test2">ToasT1Long</string>
+    <string name="test3">ToasT2Short</string>
+    <string name="test4">Test4</string>
+    <string name="alertOk">Alert Ok</string>
+    <string name="snack1">SnackTest</string>
+
+    <!-- Item -->
+    <string-array name="Ciudades">
+        <item>Seleccionar ciudad</item>
+        <item>Popayan</item>
+        <item>Cali</item>
+        <item>Bogota</item>
+        <item>Medellin</item>
+        <item>Pasto</item>
+    </string-array>
+</resources>

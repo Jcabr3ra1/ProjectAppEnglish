@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:fillViewport="true"
+    tools:context=".Menu_Main">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="32dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tittle_menu"
+            android:textColor="@color/sky_blue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/ivLogoMenu"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_menu_illustration"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menuappimg" />
+
+        <!-- Inglés -->
+        <Button
+            android:id="@+id/btnColores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/sun_yellow"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irIngles"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/button_ingles"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Matemáticas -->
+        <Button
+            android:id="@+id/btnFrutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/grass_green"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irOperaciones"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/button_matematicas"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Jugar -->
+        <Button
+            android:id="@+id/btnNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/grape_purple"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irJugar"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/button_jugar"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <!-- IMC -->
+        <Button
+            android:id="@+id/btnAnimales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/coral_orange"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irIMC"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/button_imc"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!-- Áreas -->
+        <Button
+            android:id="@+id/btnVocales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="@color/sky_blue"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irAreas"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/button_area"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irTest"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/test"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>

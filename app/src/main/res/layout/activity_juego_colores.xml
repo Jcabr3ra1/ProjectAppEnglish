@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Juego_Colores">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/aprendamos_los_colores"
+        android:textColor="@color/sky_blue"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgColor"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/color_actual"
+        android:onClick="reproducirColor"
+        android:scaleType="fitCenter"
+        android:src="@drawable/red" />
+
+    <!-- Texto de instrucción -->
+    <TextView
+        android:id="@+id/tvInstruccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/selecciona_c_mo_se_escribe_este_color"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Opciones de escritura -->
+    <LinearLayout
+        android:id="@+id/layoutOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOpcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/sun_yellow"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="verificarRespuesta"
+            android:text="@string/red"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnOpcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/grass_green"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="verificarRespuesta"
+            android:text="@string/rad"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnOpcion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grape_purple"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="verificarRespuesta"
+            android:text="@string/reed"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Pronunciación visible -->
+    <TextView
+        android:id="@+id/tvPronunciacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/pronunciaci_n_red"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <!-- Botón siguiente -->
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/sky_blue"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="irSiguiente"
+        android:text="@string/siguiente_color"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Botón volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/sun_yellow"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="irMenuColores"
+        android:text="@string/volver_al_men"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>

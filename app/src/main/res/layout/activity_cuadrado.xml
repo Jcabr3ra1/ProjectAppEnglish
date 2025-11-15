@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:padding="16dp"
+    tools:context=".Cuadrado">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitleCua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/rea_del_cuadrado"
+            android:textColor="@color/sky_blue"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Campo Lado -->
+        <EditText
+            android:id="@+id/edtLadoCua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/ingrese_el_lado"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <!-- Botón Calcular -->
+        <Button
+            android:id="@+id/btnCalCua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/sun_yellow"
+            android:paddingHorizontal="24dp"
+            android:text="@string/calcular_rea"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/txtResulCua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/el_rea_del_cuadrado_es"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

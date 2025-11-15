@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:padding="16dp"
+    tools:context=".Vocales">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/tvTitleVocales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/title_vowels"
+            android:textColor="@color/sky_blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- GRILLA  -->
+        <GridLayout
+            android:id="@+id/gridVocales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- A -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgA"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_a"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vo_a" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsA"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundAEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es"
+                        app:tint="@null" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnA"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundAEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en"
+                        app:tint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- E -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgE"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_e"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vo_e" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsE"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundEEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es"
+                        app:tint="@null" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnE"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundEEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en"
+                        app:tint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- I -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgI"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_i"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vo_i" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsI"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundIEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es"
+                        app:tint="@null" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnI"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundIEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en"
+                        app:tint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- O -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgO"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_o"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vo_o" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsO"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundOEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es"
+                        app:tint="@null" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnO"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundOEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en"
+                        app:tint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- U -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgU"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_u"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vo_u" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsU"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundUEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es"
+                        app:tint="@null" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnU"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundUEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en"
+                        app:tint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

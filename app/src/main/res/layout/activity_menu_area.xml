@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:fillViewport="true"
+    tools:context=".Menu_Area">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="32dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/menu_title_area"
+            android:textColor="@color/sky_blue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Ilustración -->
+        <ImageView
+            android:id="@+id/ivLogoMenu"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_menu_illustration"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_area" />
+
+        <!-- Botón Triángulo -->
+        <Button
+            android:id="@+id/btnColores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/sun_yellow"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irATria"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/menu_triangulo"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Botón Cuadrado -->
+        <Button
+            android:id="@+id/btnFrutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/grass_green"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irACua"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/menu_cuadrado"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Botón Círculo -->
+        <Button
+            android:id="@+id/btnNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="@color/grape_purple"
+            android:fontFamily="sans-serif-medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="56dp"
+            android:onClick="irACircu"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/menu_circulo"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:padding="16dp"
+    tools:context=".Frutas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/tvTitleFrutas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/title_fruits"
+            android:textColor="@color/sky_blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- GRILLA -->
+        <GridLayout
+            android:id="@+id/gridFrutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- Apple -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgApple"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_apple"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/apple" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsApple"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundAppleEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnApple"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundAppleEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Banana -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgBanana"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_banana"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/banana" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsBanana"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundBananaEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnBanana"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundBananaEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Grape -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgGrape"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_grape"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/grape" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsGrape"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundGripeEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnGrape"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundGripeEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Mango -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgMango"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_mango"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mango" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsMango"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundMangoEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnMango"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundMangoEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Orange -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgOrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_orange"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/orange_fruit" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsOrange"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundOrangeEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnOrange"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundOrangeEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Watermelon -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgWatermelon"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_watermelon"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/watermelon" />
+
+                <!-- audios -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnEsWatermelon"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_es"
+                        android:onClick="soundWatermelonEs"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_es" />
+
+                    <ImageButton
+                        android:id="@+id/btnEnWatermelon"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/audio_en"
+                        android:onClick="soundWatermelonEn"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_en" />
+                </LinearLayout>
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
